@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet"  href="css/styel.css" >
+    <link rel="stylesheet"  href="iconfont/fontawesome-free-5.15.4-web/css/all.css" >
+</head>
+<body>
+    <header>
+        <div class="nav">
+        <div class="continer">
+        <div class="logo" > 
+        <div class="letter">S</div>oul
+            
+            </div>
+            <div class="list">
+           <ul>
+               <li ><a  href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a class="active" href="form.html">Contact Us</a></li>
+           </ul>
+     </div>
+    </div>
+    </div>
+    </header>
+
+<div class="yourform">
+<div class="overlay"></div>
+<div class="continer">
+<!-- <div class="contactUs"> -->
+ 
+<form id="form">
+    <h1>Contact Us</h1>
+<input name="yourName" type="text" placeholder="Enter Your Name" id="name" oninput="nameValid()"  >
+<p class="notvalid"></p>
+<input name="yourEmaill" type="email" placeholder="Enter Your Email" id="email" oninput="emailValid()"  >
+<p class="notvalid"></p>
+<input name="yourpass" type="password" placeholder="Enter Your Password" id="pass" oninput="passValid()">
+<p class="notvalid"></p>
+<input type="submit" value="Contact us" class="submit" id="submit">
+
+</form>
+    <!-- </div> -->
+</div>
+
+
+</div>
+<footer>
+    <div class="continer">
+    
+       <p class="our">KEEP IN TOUCH</p>
+       <div class="contact">
+      <p>  125, Park street avenue, Brocklyn, Newyork.</p>
+        <p><i class="fas fa-envelope"></i> info@domain.com</p>
+        <i class="fas fa-phone"></i> +11253678958
+    
+    </div>
+    <div class="arro"><p class="final">   Copyright © 2022 - All Rights Reserved - Domain Name</p>
+     <button  id="arro"> <a href="index.html" class="arro2"><i class="fas fa-arrow-alt-circle-up"></i></a></button>  </div>
+    </div>
+    </footer>
+    <script src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:rgb(28 141 207);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.continer{
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+.nav{ 
+margin: auto;
+
+}
+.nav .continer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: 100%;
+   z-index: 4;
+   background-color:  #ddd;
+}
+.letter{
+display: inline-block;
+animation-name: animate;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+
+
+}
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(18, 156, 236);
+}
+.list li{
+    padding: 20px;
+font-size: 28px;
+    display: inline-block;
+}
+.list li a.active{
+ color: rgb(28 141 207);
+}
+.list li:hover a{
+    background-color:rgb(28 141 207) ;
+    color: white;
+    padding: 20px;
+}
+/* section .slider{
+    background-color: #ddd;
+} */
+.slider{
+ 
+    position: relative;
+    /* background-color: #ddd; */
+    overflow: hidden;
+}
+.slider .continer{
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.left {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+.right{
+ position: absolute;
+    top: 300px;
+  
+    right: 50px;
+}
+    
+
+.left i,.right i{
+    font-size: 30px;
+    color: white;
+}
+.know {
+margin-bottom: 20px
+}
+.know .continer{
+    display: flex;
+    justify-content: space-between ;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+/* .know .continer img{
+    width: 50%;
+}
+
+.know .continer .img img{
+    width: 100%;
+    height: 100%;
+} */
+.know .continer .text h2 ,.works .buttons h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.know .continer .text p{
+    line-height: 2;
+    color: #a19d9d;
+    font-size: 25px;
+}
+
+.works{
+    background-color: #ddd;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.works .titel::after{
+    content: "...";
+    color: #626161;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.works .buttons{
+    text-align: center;
+}
+.works .buttons ul li{
+display: inline-block;
+padding: 18px;
+}
+.works .buttons ul li a{
+    color: black;
+    font-size: 18px;
+}
+.works .buttons .activ{
+    color: var(--main-color);
+}
+.prodctes a{
+transition: .4s ease-in-out;
+}
+
+.continer .dives{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-top: 17px;
+}
+.element{
+  width:250px;
+margin-bottom: 20px;
+/* display: none; */
+position: relative;
+}
+.element img{
+    width: 100%;
+    height: 100%;
+}
+.element button{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    padding: 7px 16px;
+    border-radius: 7px;
+    background-color: var(--main-color);
+    border: 0;
+    /* display: none; */
+  transition: 1s ease-in-out;
+    width: 70px;
+    opacity: 0;
+}
+@keyframes exampel {
+   from{
+     
+   opacity: 0;} 
+   to{opacity: 1;}
+}
+.element:hover .add {
+   /* animation-name:exampel;
+   animation-duration: 1ms; */
+opacity: 1;
+
+
+}
+#cart{
+    position: relative;
+}
+#count{
+    background-color: rgb(20, 20, 20);
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 31px;
+    top: 25px;
+    font-size: 16px;
+}
+
+footer{
+padding-top: 50px;
+padding-bottom: 15px;
+}
+
+footer .continer .our{
+    font-size: 27px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact{
+    font-size: 20px;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+.contact p{
+    margin-bottom: 10px;
+}
+.final{
+    padding-top: 20px;
+    
+}
+.arro{position: relative;}
+.arro button
+{background-color: white;
+    font-size: 27px;
+    position: absolute;
+    right: 30px;
+    bottom: -2px;
+    border: 0;
+
+}
+/* .yourform .continer{
+ 
+} */
+.yourform{
+    background-image: url("../imges/portfolio-6.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+     position: relative;
+}
+
+form{background-color: rgb(56 145 197 / 41%);
+    width: 40%;
+    padding: 30px;position: absolute;    left: 384px;
+    top: 180px;text-align: center;
+    color:white;
+    height: 400px;
+}
+ form input{    
+    width: 80%;
+    border-radius: 18px;
+    margin: 20px auto;
+    padding: 9px;}
+.submit{width: 40%;margin:10 auto;color: var(--main-color);font-size: 20px;}
+/* about style */
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0 ,.3) ;
+}
+.slid2{
+  background-color: #ddd;
+padding: 15px;
+/* margin-left: 100px;
+margin-right: 100px; */
+/* margin-bottom: 10px; */
+text-align: center;
+font-size: large;
+color: var(--main-color);
+}
+.text2{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 100px;
+    margin-right: 100px; 
+    font-size: 20px;
+    line-height: 1.8;
+    color: black;
+    background-color:white ;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+.about h1{
+    color: var(--main-color);
+    text-align: center;
+    /* padding: 30px; */
+margin-top: 120px;
+margin-bottom: 20px;
+}
+.about .continer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+/* height: ; */
+    padding-bottom: 30px;
+}
+.about .imge{
+    /* border: 1px solid #ddd; */
+    padding: 30px;
+}
+.about .imge img{
+    width: 100%;
+    height: 100%;
+}
+.about .continer .description{
+padding: 38px;
+padding-left: 10px;
+color: #333;
+line-height: 2;
+font-size: 20px;
+}
